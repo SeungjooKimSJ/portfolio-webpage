@@ -15,6 +15,8 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-green: #1ED98B;
+  /* Might use these colors later
+  #EDF1FD #F4F7FF #17D1AC #1ED98B #292929 #161616 */
 
   /* Font Size */
   --font-large: 48px;
@@ -47,7 +49,6 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
 }
 
 ul {
