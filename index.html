@@ -12,12 +12,237 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <h1>Hello :)</h1>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img
+        class="logo"
+        src="./images/circles_favicon.png"
+        alt="favicon"
+      />
+      <a href="#">SJ</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active">Home</li>
+      <li class="navbar__menu__item">About</li>
+      <li class="navbar__menu__item">Skills</li>
+      <li class="navbar__menu__item">My work</li>
+      <li class="navbar__menu__item">Testimonial</li>
+      <li class="navbar__menu__item">Contact</li>
+    </ul>
+  </nav>
 
-  <script src="./main.js" defer></script>
+  <!-- Home -->
+  <section id="home">
+    <img
+      class="home__avatar"
+      src="./images/selfie.png"
+      alt="sj"
+    />
+    <h1 class="home__title">Hello, <br />I'm Seungjoo Kim</h1>
+    <h2 class="home__description">
+      A Full-stack Web Developer who is constantly trying to improve
+      <br />and understanding software development with passion.
+    </h2>
+    <button class="home__contact">Contact Me</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h1>About me</h1>
+    <p>
+      I have learned a lot about team play while working as a
+      head server and an assistant manager in a busy restaurant
+      for the past 10 years and also learned a lot about how to
+      communicate with the team and customers.
+      <br />
+      I started studying web development by myself at the end of
+      last year, and I got more interested, so I finished a 3-month
+      boot camp program at Learning Fuze to improve my coding skills.
+      <br />
+      While taking to this program, I studied and worked more than
+      60 hours a week (more than 800 hours in total) in the
+      same environment as working in the field.
+      I also learned how to finish projects and tasks in a
+      timely manner and how to communicate with other developers.
+      <br />
+      It was tough to take this program, but it was a very precious
+      experience for me and it was a good enough time to learn
+      many things and improve my coding knowledge.
+      <br />
+      Currently, I am working on several portfolios and am constantly
+      learning new and reviewing lacking knowledge.
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="major__title">Front-end</div>
+        <div class="major__description">
+          HTML5, CSS3, JavaScript,
+          <br /> React, Web APIs
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <div class="major__title">Tools</div>
+        <div class="major__description">
+          Git, GitHub, Cmder, VS Code,
+          <br /> Slack, Figma, npm, Webpack
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <div class="major__title">Back-end</div>
+        <div class="major__description">
+          JavaScript, NodeJS, ExpressJS,
+          <br /> Rest APIs, MySQL, PostgreSQL
+        </div>
+      </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <div class="job__icon">
+          <i class="fas fa-laptop-house"></i>
+        </div>
+        <p class="job__name">Learning Fuze</p>
+        <p class="job__period">2021. 03 - 2021. 05</p>
+      </div>
+      <div class="job">
+        <div class="job__icon">
+          <i class="fas fa-school"></i>
+        </div>
+        <p class="job__name">Irvine Valley College</p>
+        <p class="job__period">2018 - 2021</p>
+      </div>
+      <div class="job">
+        <div class="job__icon">
+          <i class="far fa-building"></i>
+        </div>
+        <p class="job__name">Restaurant</p>
+        <p class="job__period">2013 - 2021</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <h2>Skills &amp; Attributes</h2>
+    <p>
+      Experience with all phases of the software life-cycle.
+      Passion for learning new technologies. Capable of working within
+      a team environment and independently. Ability to plan and time
+      schedule, work under strict time pressure and adapt quicky when needed.
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill_description">
+            <span>HTML</span>
+            <span>99%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>React</span>
+            <span>85%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>NodeJS</span>
+            <span>84%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>SQL</span>
+            <span>82%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill_description">
+            <span>Rest APIs</span>
+            <span>85%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio Code</span></li>
+            <li><span>GitHub</span></li>
+            <li><span>Cmder</span></li>
+            <li><span>Figma</span></li>
+            <li><span>Webpack</span></li>
+            <li><span>npm</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+            <li><span>Communicate</span></li>
+            <li><span>Teamwork</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work"></section>
+
+  <section id="testimonials"></section>
+
+  <section id="contact"></section>
+
+
+  <script src="./js/main.js" defer></script>
 </body>
 </html>
