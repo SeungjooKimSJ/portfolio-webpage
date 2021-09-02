@@ -1,9 +1,85 @@
-.logo {
-  width: 18px;
-  height: 18px;
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #fff;
+  --color-light-white: #eee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-black: #000;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+
+  /* Font Size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+}
+
+
+/* Universal */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .home__avatar {
   width: 300px;
   height: 300px;
+}
+
+/* Fonts */
+
+h1 {
+  margin: 16px 0px;
+}
+
+h2 {
+  margin: 8px 0;
+}
+
+h3 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 4px 0;
+}
+
+/* Navbar */
+
+.logo {
+  width: 16px;
+  height: 16px;
 }
