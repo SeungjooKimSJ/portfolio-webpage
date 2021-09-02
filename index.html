@@ -20,12 +20,12 @@
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
-      <img
+      <!-- <img
         class="logo"
         src="./images/circles_favicon.png"
         alt="favicon"
-      />
-      <a href="#">SJ</a>
+      /> -->
+      <a href="#">SJ <i class="far fa-smile"></i></a>
     </div>
     <ul class="navbar__menu">
       <li class="navbar__menu__item active">Home</li>
@@ -151,7 +151,7 @@
         <div class="skill">
           <div class="skill_description">
             <span>HTML</span>
-            <span>99%</span>
+            <span>98%</span>
           </div>
           <div class="skill__bar">
             <div class="skill__value"></div>
@@ -160,7 +160,7 @@
         <div class="skill">
           <div class="skill_description">
             <span>CSS</span>
-            <span>90%</span>
+            <span>92%</span>
           </div>
           <div class="skill__bar">
             <div class="skill__value"></div>
@@ -169,7 +169,7 @@
         <div class="skill">
           <div class="skill_description">
             <span>JavaScript</span>
-            <span>90%</span>
+            <span>91%</span>
           </div>
           <div class="skill__bar">
             <div class="skill__value"></div>
@@ -178,7 +178,7 @@
         <div class="skill">
           <div class="skill_description">
             <span>React</span>
-            <span>85%</span>
+            <span>86%</span>
           </div>
           <div class="skill__bar">
             <div class="skill__value"></div>
@@ -236,12 +236,165 @@
     </div>
   </section>
 
-  <section id="work"></section>
+  <!-- Work -->
+  <section id="work">
+    <h1>My Work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">
+        All <span class="category__count">4</span>
+      </button>
+      <button class="category__btn">
+        Front-end <span class="category__count">2</span>
+      </button>
+      <button class="category__btn">
+        Back-end <span class="category__count">0</span>
+      </button>
+      <button class="category__btn">
+        Full-stack <span class="category__btn">2</span>
+      </button>
+    </div>
 
-  <section id="testimonials"></section>
+    <div class="work__projects">
+      <a
+        href="https://github.com/SeungjooKimSJ"
+        class="project"
+        data-type="full-stack"
+        target="blank"
+      >
+      <img
+        src="./images/projects/fullstack_clever_consumption.png"
+        alt="clever_consumption"
+        class="project__img"
+      />
+      <div class="project__description">
+        <h3>Clever Consumption</h3>
+        <span>
+          A full-stack JavaScript and React web application that
+          allows people to check their balance easily and accurately
+          by simply storing the details of each transaction.
+        </span>
+      </div>
+      </a>
+      <a
+        href="https://github.com/SeungjooKimSJ"
+        class="project"
+        data-type="full-stack"
+        target="blank"
+      >
+      <img
+        src="./images/projects/fullstack_business_card_maker.png"
+        alt="card_maker"
+        class="project__img"
+      />
+      <div class="project__description">
+        <h3>Business Card Maker</h3>
+        <span>
+          A full-stack JavaScript and React web application that allows
+          users to create business card easily and store, update, and
+          delete them anytime.
+        </span>
+      </div>
+      </a>
+      <a
+        href="https://github.com/SeungjooKimSJ"
+        class="project"
+        data-type="front-end"
+        target="blank"
+      >
+      <img
+        src="./images/projects/frontend_bucket_place.png"
+        alt="bucket_places"
+        class="project__img"
+      />
+      <div class="project__description">
+        <h3>Bucket Places</h3>
+        <span>
+          A dynamic JavaScript, HTML, and CSS app that allows users
+          to save images and descriptions about where their
+          bucket places and easily check and update or delete
+          their storage history at any time.
+        </span>
+      </div>
+      </a>
+      <a
+        href="https://github.com/SeungjooKimSJ"
+        class="project"
+        data-type="front-end"
+        target="blank"
+      >
+      <img
+        src="./images/projects/frontend_code_journal.png"
+        alt="code_journal"
+        class="project__img"
+      />
+      <div class="project__description">
+        <h3>Code Jouranl</h3>
+        <span>
+          A dynamic HTML, CSS, and JavaScript journal application
+          for users who want to capture their notes.
+        </span>
+      </div>
+      </a>
+    </div>
+  </section>
 
-  <section id="contact"></section>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="./images/testimonial/people1.png"
+          alt="people"
+          class="testimonoal__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Obcaecati ex assumenda quae, consequatur eos perspiciatis
+            explicabo. A saepe iste sequi rem voluptates tempora nisi!
+            Ipsam sunt architecto odit enim doloremque!
+          </p>
+          <p class="name"><a href="">ex1</a></p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img
+          src="./images/testimonial/people1.png"
+          alt="people"
+          class="testimonoal__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Obcaecati ex assumenda quae, consequatur eos perspiciatis
+            explicabo. A saepe iste sequi rem voluptates tempora nisi!
+            Ipsam sunt architecto odit enim doloremque!
+          </p>
+          <p class="name"><a href="">ex2</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h1 class="contact__title">Let's Talk</h1>
+    <h2 class="contact__email">sjskybone@gmail.com</h2>
+    <div class="contact__links">
+      <a href="https://github.com/SeungjooKimSJ" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/seungjoo-kim-sj/" target="_blank">
+        <i class="fa fa-linkedin-square"></i>
+      </a>
+    </div>
+    <p class="contact__rights">
+      2021 SeungjooKimSJ - Thank you for your visit :)
+    </p>
+  </section>
 
   <script src="./js/main.js" defer></script>
 </body>
