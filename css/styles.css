@@ -81,6 +81,10 @@
 
 /* About */
 
+.about__p {
+  line-height: var(--line-height);
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;

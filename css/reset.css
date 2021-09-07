@@ -31,6 +31,9 @@
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
+  /* Line Height */
+  --line-height: 1.5;
+
   /* Size */
   --size-border-radius: 4px;
 
