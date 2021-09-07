@@ -13,10 +13,9 @@
   font-weight: var(--weight-semi-bold);
 }
 
-/* .logo {
-  width: 16px;
-  height: 16px;
-} */
+.logo {
+  font-size: var(--font-regular);
+}
 
 .navbar__logo > a {
   color: var(--color-white);
