@@ -5,13 +5,14 @@
   --color-white: #fff;
   --color-light-white: #eee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
+  /* --color-pink: #fe918d; */
   --color-dark-pink: #ff6863;
   --color-black: #000;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
+  --color-dark-blue: #1C3547;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-green: #1ED98B;
@@ -59,6 +60,13 @@ ul {
 .home__avatar {
   width: 300px;
   height: 300px;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
