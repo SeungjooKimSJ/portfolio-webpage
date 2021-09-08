@@ -25,7 +25,7 @@
         src="./images/circles_favicon.png"
         alt="favicon"
       /> -->
-      <a href="#">SJ <i class="far fa-smile"></i></a>
+      <a href="#" class="logo">SJ <i class="far fa-smile"></i></a>
     </div>
     <ul class="navbar__menu">
       <li class="navbar__menu__item active">Home</li>
@@ -35,10 +35,15 @@
       <li class="navbar__menu__item">Testimonial</li>
       <li class="navbar__menu__item">Contact</li>
     </ul>
+
+    <!-- Toggle Button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
   </nav>
 
   <!-- Home -->
-  <section id="home">
+  <section id="home" class="">
     <img
       class="home__avatar"
       src="./images/selfie.png"
@@ -53,28 +58,28 @@
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section section__container">
     <h1>About me</h1>
     <p>
       I have learned a lot about team play while working as a
       head server and an assistant manager in a busy restaurant
       for the past 10 years and also learned a lot about how to
       communicate with the team and customers.
-      <br />
+      <br><br/>
       I started studying web development by myself at the end of
       last year, and I got more interested, so I finished a 3-month
       boot camp program at Learning Fuze to improve my coding skills.
-      <br />
+      <br><br/>
       While taking to this program, I studied and worked more than
       60 hours a week (more than 800 hours in total) in the
       same environment as working in the field.
       I also learned how to finish projects and tasks in a
       timely manner and how to communicate with other developers.
-      <br />
+      <br><br/>
       It was tough to take this program, but it was a very precious
       experience for me and it was a good enough time to learn
       many things and improve my coding knowledge.
-      <br />
+      <br><br/>
       Currently, I am working on several portfolios and am constantly
       learning new and reviewing lacking knowledge.
     </p>
@@ -83,17 +88,17 @@
         <div class="major__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="major__title">Front-end</div>
+        <h2 class="major__title">Front-end</h2>
         <div class="major__description">
           HTML5, CSS3, JavaScript,
-          <br /> React, Web APIs
+          <br /> Ajax, React, Web APIs
         </div>
       </div>
       <div class="major">
         <div class="major__icon">
           <i class="fas fa-wrench"></i>
         </div>
-        <div class="major__title">Tools</div>
+        <h2 class="major__title">Tools</h2>
         <div class="major__description">
           Git, GitHub, Cmder, VS Code,
           <br /> Slack, Figma, npm, Webpack
@@ -103,7 +108,7 @@
         <div class="major__icon">
           <i class="fas fa-server"></i>
         </div>
-        <div class="major__title">Back-end</div>
+        <h2 class="major__title">Back-end</h2>
         <div class="major__description">
           JavaScript, NodeJS, ExpressJS,
           <br /> Rest APIs, MySQL, PostgreSQL
@@ -115,272 +120,284 @@
         <div class="job__icon">
           <i class="fas fa-laptop-house"></i>
         </div>
-        <p class="job__name">Learning Fuze</p>
-        <p class="job__period">2021. 03 - 2021. 05</p>
+        <div class="job__description">
+          <p class="job__name">Learning Fuze</p>
+          <p class="job__period">2021 March - 2021 May</p>
+        </div>
       </div>
       <div class="job">
         <div class="job__icon">
           <i class="fas fa-school"></i>
         </div>
-        <p class="job__name">Irvine Valley College</p>
-        <p class="job__period">2018 - 2021</p>
+        <div class="job__description">
+          <p class="job__name">Irvine Valley College</p>
+          <p class="job__period">2018 - 2021</p>
+        </div>
       </div>
       <div class="job">
         <div class="job__icon">
           <i class="far fa-building"></i>
         </div>
-        <p class="job__name">Restaurant</p>
-        <p class="job__period">2013 - 2021</p>
+        <div class="job__description">
+          <p class="job__name">Restaurant</p>
+          <p class="job__period">2013 - 2021</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <h2>Skills &amp; Attributes</h2>
-    <p>
-      Experience with all phases of the software life-cycle.
-      Passion for learning new technologies. Capable of working within
-      a team environment and independently. Ability to plan and time
-      schedule, work under strict time pressure and adapt quicky when needed.
-    </p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill_description">
-            <span>HTML</span>
-            <span>98%</span>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills &amp; Attributes</h2>
+      <p>
+        Experience with all phases of the software life-cycle.
+        Passion for learning new technologies. Capable of working within
+        a team environment and independently. Ability to plan and time
+        schedule, work under strict time pressure and adapt quicky when needed.
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>98%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 98%;"></div>
+            </div>
           </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>92%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>85%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>NodeJS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>SQL</span>
+              <span>81%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 81%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Rest APIs</span>
+              <span>84%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 84%;"></div>
+            </div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>CSS</span>
-            <span>92%</span>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>GitHub</span></li>
+              <li><span>Cmder</span></li>
+              <li><span>Figma</span></li>
+              <li><span>Webpack</span></li>
+              <li><span>npm</span></li>
+            </ul>
           </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Communicate</span></li>
+              <li><span>Teamwork</span></li>
+            </ul>
           </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>JavaScript</span>
-            <span>91%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>React</span>
-            <span>86%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>NodeJS</span>
-            <span>84%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>SQL</span>
-            <span>82%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>Rest APIs</span>
-            <span>85%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
-          </div>
-        </div>
-      </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio Code</span></li>
-            <li><span>GitHub</span></li>
-            <li><span>Cmder</span></li>
-            <li><span>Figma</span></li>
-            <li><span>Webpack</span></li>
-            <li><span>npm</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-            <li><span>Communicate</span></li>
-            <li><span>Teamwork</span></li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Work -->
-  <section id="work">
-    <h1>My Work</h1>
-    <h3>Projects</h3>
-    <div class="work__categories">
-      <button class="category__btn">
-        All <span class="category__count">4</span>
-      </button>
-      <button class="category__btn">
-        Front-end <span class="category__count">2</span>
-      </button>
-      <button class="category__btn">
-        Back-end <span class="category__count">0</span>
-      </button>
-      <button class="category__btn">
-        Full-stack <span class="category__btn">2</span>
-      </button>
-    </div>
+  <section id="work" class="section">
+    <div class="section__container">
+      <h1>My Work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn active">
+          All <span class="category__count">4</span>
+        </button>
+        <button class="category__btn">
+          Front-end <span class="category__count">2</span>
+        </button>
+        <button class="category__btn">
+          Back-end <span class="category__count">0</span>
+        </button>
+        <button class="category__btn">
+          Full-stack <span class="category__count">2</span>
+        </button>
+      </div>
 
-    <div class="work__projects">
-      <a
-        href="https://github.com/SeungjooKimSJ"
-        class="project"
-        data-type="full-stack"
-        target="blank"
-      >
-      <img
-        src="./images/projects/fullstack_clever_consumption.png"
-        alt="clever_consumption"
-        class="project__img"
-      />
-      <div class="project__description">
-        <h3>Clever Consumption</h3>
-        <span>
-          A full-stack JavaScript and React web application that
-          allows people to check their balance easily and accurately
-          by simply storing the details of each transaction.
-        </span>
+      <div class="work__projects">
+        <a
+          href="https://github.com/SeungjooKimSJ"
+          class="project"
+          data-type="full-stack"
+          target="blank"
+        >
+        <img
+          src="./images/projects/fullstack_clever_consumption.png"
+          alt="clever_consumption"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3>Clever Consumption</h3>
+          <span>
+            A full-stack JavaScript and React web application that
+            allows people to check their balance easily and accurately
+            by simply storing the details of each transaction.
+          </span>
+        </div>
+        </a>
+        <a
+          href="https://github.com/SeungjooKimSJ"
+          class="project"
+          data-type="full-stack"
+          target="blank"
+        >
+        <img
+          src="./images/projects/fullstack_business_card_maker.png"
+          alt="card_maker"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3>Business Card Maker</h3>
+          <span>
+            A full-stack JavaScript and React web application that allows
+            users to create business card easily and store, update, and
+            delete them anytime.
+          </span>
+        </div>
+        </a>
+        <a
+          href="https://github.com/SeungjooKimSJ"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+        <img
+          src="./images/projects/frontend_bucket_place.png"
+          alt="bucket_places"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3>Bucket Places</h3>
+          <span>
+            A dynamic JavaScript, HTML, and CSS app that allows users
+            to save images and descriptions about where their
+            bucket places and easily check and update or delete
+            their storage history at any time.
+          </span>
+        </div>
+        </a>
+        <a
+          href="https://github.com/SeungjooKimSJ"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+        <img
+          src="./images/projects/frontend_code_journal.png"
+          alt="code_journal"
+          class="project__img"
+        />
+        <div class="project__description">
+          <h3>Code Jouranl</h3>
+          <span>
+            A dynamic HTML, CSS, and JavaScript journal application
+            for users who want to capture their notes.
+          </span>
+        </div>
+        </a>
       </div>
-      </a>
-      <a
-        href="https://github.com/SeungjooKimSJ"
-        class="project"
-        data-type="full-stack"
-        target="blank"
-      >
-      <img
-        src="./images/projects/fullstack_business_card_maker.png"
-        alt="card_maker"
-        class="project__img"
-      />
-      <div class="project__description">
-        <h3>Business Card Maker</h3>
-        <span>
-          A full-stack JavaScript and React web application that allows
-          users to create business card easily and store, update, and
-          delete them anytime.
-        </span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/SeungjooKimSJ"
-        class="project"
-        data-type="front-end"
-        target="blank"
-      >
-      <img
-        src="./images/projects/frontend_bucket_place.png"
-        alt="bucket_places"
-        class="project__img"
-      />
-      <div class="project__description">
-        <h3>Bucket Places</h3>
-        <span>
-          A dynamic JavaScript, HTML, and CSS app that allows users
-          to save images and descriptions about where their
-          bucket places and easily check and update or delete
-          their storage history at any time.
-        </span>
-      </div>
-      </a>
-      <a
-        href="https://github.com/SeungjooKimSJ"
-        class="project"
-        data-type="front-end"
-        target="blank"
-      >
-      <img
-        src="./images/projects/frontend_code_journal.png"
-        alt="code_journal"
-        class="project__img"
-      />
-      <div class="project__description">
-        <h3>Code Jouranl</h3>
-        <span>
-          A dynamic HTML, CSS, and JavaScript journal application
-          for users who want to capture their notes.
-        </span>
-      </div>
-      </a>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials">
-    <h1>Testimonials</h1>
-    <h3>See what they say about me</h3>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img
-          src="./images/testimonial/people1.png"
-          alt="people"
-          class="testimonoal__avatar"
-        />
-        <div class="testimonial__speech-bubble">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Obcaecati ex assumenda quae, consequatur eos perspiciatis
-            explicabo. A saepe iste sequi rem voluptates tempora nisi!
-            Ipsam sunt architecto odit enim doloremque!
-          </p>
-          <p class="name"><a href="">ex1</a></p>
+  <section id="testimonials" class="section">
+    <div class="section__container">
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img
+            src="./images/testimonial/people1.png"
+            alt="people"
+            class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati ex assumenda quae, consequatur eos perspiciatis
+              explicabo. A saepe iste sequi rem voluptates tempora nisi!
+              Ipsam sunt architecto odit enim doloremque!
+            </p>
+            <p class="name"><a href="">ex1</a> / ex1</p>
+          </div>
         </div>
-      </div>
-      <div class="testimonial">
-        <img
-          src="./images/testimonial/people1.png"
-          alt="people"
-          class="testimonoal__avatar"
-        />
-        <div class="testimonial__speech-bubble">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Obcaecati ex assumenda quae, consequatur eos perspiciatis
-            explicabo. A saepe iste sequi rem voluptates tempora nisi!
-            Ipsam sunt architecto odit enim doloremque!
-          </p>
-          <p class="name"><a href="">ex2</a></p>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati ex assumenda quae, consequatur eos perspiciatis
+              explicabo. A saepe iste sequi rem voluptates tempora nisi!
+              Ipsam sunt architecto odit enim doloremque!
+            </p>
+            <p class="name"><a href="">ex2</a> / ex2</p>
+          </div>
+          <img
+            src="./images/testimonial/people1.png"
+            alt="people"
+            class="testimonial__avatar"
+          />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h1 class="contact__title">Let's Talk</h1>
     <h2 class="contact__email">sjskybone@gmail.com</h2>
     <div class="contact__links">
