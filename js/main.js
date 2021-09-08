@@ -1,10 +1,10 @@
 'use strict';
 
 const $navbar = document.querySelector('#navbar');
-const navbarHeight = $navbar.getBoundingClientRect().height;
+const $navbarHeight = $navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-  if (window.scrollY > navbarHeight) {
+  if (window.scrollY > $navbarHeight) {
     $navbar.classList.add('navbar--dark');
   } else {
     $navbar.classList.remove('navbar--dark');
@@ -29,6 +29,14 @@ const $homeContactBtn = document.querySelector('.home__contact');
 $homeContactBtn.addEventListener('click', event => {
   scrollIntoView('#contact');
 });
+
+const $homeContainer = document.querySelector('.home__container');
+const $homeHeight = $homeContainer.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+  $homeContainer.style.opacity = 1 - window.scrollY / $homeHeight;
+});
+
 
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
