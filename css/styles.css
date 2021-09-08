@@ -42,10 +42,11 @@
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 32px;
+  top: 14px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
+  display: none;
 }
 
 /* Home */
@@ -387,6 +388,7 @@
   font-size: var(--font-large);
   margin: 24px 0;
 }
+
 
 .contact__links a {
   color: var(--color-white);
