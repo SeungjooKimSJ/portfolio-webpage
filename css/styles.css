@@ -1,12 +1,20 @@
 /* Navbar */
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-blue);
   align-items: center;
   color: var(--color-white);
   padding: var(--font-small);
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-blue);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -54,6 +62,7 @@
 #home {
   background: url('../images/sj_background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
