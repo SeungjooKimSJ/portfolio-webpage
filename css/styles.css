@@ -15,7 +15,7 @@
 
 #navbar.navbar--dark {
   background-color: var(--color-dark-blue);
-  padding: 8px;
+  padding: 8px 14px;
 }
 
 .navbar__logo {
@@ -42,11 +42,6 @@
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
-
-/* .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-  border-radius: var(--size-border-radius);
-} */
 
 .navbar__menu__item:hover {
   background-color: var(--color-blue);
@@ -329,11 +324,14 @@
   transform: translateY(0px);
 }
 
+.project__description h3 {
+  color: var(--color-orange);
+}
+
 .project__description span {
   padding: 8px;
 }
 
-.project__description h3,
 .project__description span {
   color: var(--color-white);
 }
@@ -343,8 +341,9 @@
   display: block;
   position: relative;
   left: 45%;
-  width: 25px;
+  width: 50px;
   height: 2px;
+  transform: translateX(-25%);
   margin-top: 16px;
   background-color: var(--color-dark-white);
 }
