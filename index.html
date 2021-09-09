@@ -12,28 +12,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
 </head>
 
 <body>
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
-      <!-- <img
-        class="logo"
-        src="./images/circles_favicon.png"
-        alt="favicon"
-      /> -->
-      <a href="#" class="logo">SJ <i class="far fa-smile"></i></a>
+      <a href="#" class="logo">SJ</a>
+      <i class="far fa-smile"></i>
     </div>
     <ul class="navbar__menu">
-      <li class="navbar__menu__item active">Home</li>
-      <li class="navbar__menu__item">About</li>
-      <li class="navbar__menu__item">Skills</li>
-      <li class="navbar__menu__item">My work</li>
-      <li class="navbar__menu__item">Testimonial</li>
-      <li class="navbar__menu__item">Contact</li>
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#work">My work</li>
+      <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
     <!-- Toggle Button -->
@@ -44,17 +41,19 @@
 
   <!-- Home -->
   <section id="home" class="">
-    <img
+    <div class="home__container">
+      <img
       class="home__avatar"
       src="./images/selfie.png"
       alt="sj"
-    />
-    <h1 class="home__title">Hello, <br />I'm Seungjoo Kim</h1>
-    <h2 class="home__description">
-      A Full-stack Web Developer who is constantly trying to improve
-      <br />and understanding software development with passion.
-    </h2>
-    <button class="home__contact">Contact Me</button>
+      />
+      <h1 class="home__title">Hello, <br />I'm Seungjoo Kim</h1>
+      <h2 class="home__description">
+        A Full-stack Web Developer who is constantly trying to improve
+        <br />and understanding software development with passion.
+      </h2>
+      <button class="home__contact">Contact Me</button>
+    </div>
   </section>
 
   <!-- About -->
@@ -255,16 +254,16 @@
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn active">
+        <button class="category__btn selected" data-filter="*">
           All <span class="category__count">4</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="front-end">
           Front-end <span class="category__count">2</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="back-end">
           Back-end <span class="category__count">0</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="full-stack">
           Full-stack <span class="category__count">2</span>
         </button>
       </div>
@@ -273,8 +272,8 @@
         <a
           href="https://github.com/SeungjooKimSJ"
           class="project"
-          data-type="full-stack"
           target="blank"
+          data-type="full-stack"
         >
         <img
           src="./images/projects/fullstack_clever_consumption.png"
@@ -293,8 +292,8 @@
         <a
           href="https://github.com/SeungjooKimSJ"
           class="project"
-          data-type="full-stack"
           target="blank"
+          data-type="full-stack"
         >
         <img
           src="./images/projects/fullstack_business_card_maker.png"
@@ -313,8 +312,8 @@
         <a
           href="https://github.com/SeungjooKimSJ"
           class="project"
-          data-type="front-end"
           target="blank"
+          data-type="front-end"
         >
         <img
           src="./images/projects/frontend_bucket_place.png"
@@ -334,8 +333,8 @@
         <a
           href="https://github.com/SeungjooKimSJ"
           class="project"
-          data-type="front-end"
           target="blank"
+          data-type="front-end"
         >
         <img
           src="./images/projects/frontend_code_journal.png"
@@ -409,9 +408,14 @@
       </a>
     </div>
     <p class="contact__rights">
-      2021 SeungjooKimSJ - Thank you for your visit :)
+      2021 SeungjooKimSJ <br/> Thank you for your visit :)
     </p>
   </section>
+
+  <!-- Arrow -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="./js/main.js" defer></script>
 </body>
