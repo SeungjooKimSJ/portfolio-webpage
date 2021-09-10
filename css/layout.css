@@ -12,6 +12,9 @@
 
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -37,34 +40,71 @@
 
   .section {
     padding: 16px;
+    padding-top: 48px;
+  }
+
+  .about__p {
+    margin-top: 0px;
   }
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 80%;
+  }
+
+  .category__btn.selected .category__count,
+  .category__btn:hover .category__count {
+    top: 5px;
+  }
+
+  .category__count {
+    right: 32px;
+  }
+
   .project {
     flex-grow: 1;
   }
 
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
   }
 
   .arrow-up {
-    bottom: 50px;
-    right: 20px;
     width: 50px;
     height: 50px;
-    font-size: 35px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
