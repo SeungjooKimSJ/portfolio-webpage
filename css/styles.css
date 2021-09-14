@@ -25,6 +25,11 @@
 
 .navbar__logo > a {
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.navbar__logo > a:hover {
+  color: var(--color-light-green);
 }
 
 .navbar__menu {
@@ -41,7 +46,8 @@
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-yellow);
+  color: var(--color-yellow);
 }
 
 .navbar__menu__item:hover {
@@ -208,7 +214,7 @@
 }
 
 .skillset__title {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .skillset__left {
@@ -224,6 +230,7 @@
 .skill__description {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .skill__bar {
@@ -234,7 +241,7 @@
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-green);
 }
 
 .skillset__right {
@@ -466,6 +473,10 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) ease-in;
+}
+
+.arrow-up:hover {
+  color: var(--color-yellow);
 }
 
 .arrow-up.visible {
