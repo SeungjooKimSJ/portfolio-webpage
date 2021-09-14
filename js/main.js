@@ -93,12 +93,6 @@ $workContainer.addEventListener('click', event => {
   }, 300);
 });
 
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-
-  scrollTo.scrollIntoView({behavior: 'smooth'});
-}
-
 const sectionIds = [
   '#home',
   '#about',
@@ -109,7 +103,9 @@ const sectionIds = [
 ];
 
 const sections = sectionIds.map(id => document.querySelector(id));
-const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+const navItems = sectionIds.map(id =>
+  document.querySelector(`[data-link="${id}"]`)
+);
 
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
@@ -118,6 +114,13 @@ function selectNavItem(selected) {
   selectedNavItem.classList.remove('active');
   selectedNavItem = selected;
   selectedNavItem.classList.add('active');
+}
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+
+  scrollTo.scrollIntoView({behavior: 'smooth'});
+  selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
 const observerOptions = {
