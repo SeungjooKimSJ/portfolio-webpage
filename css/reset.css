@@ -6,6 +6,7 @@
   --color-light-white: #eee;
   --color-dark-white: #bdbdbd;
   --color-black: #000;
+  --color-light-black: #292929;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -14,7 +15,10 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-green: #1ED98B;
-  --color-light-green: #C9F3E1;
+  --color-light-green: #17d1ac;
+  --color-sky-blue: #edf1fd;
+  --color-sky-light-blue: #f4f7ff;
+  --color-pink: #FF8683;
 
   /* Font Size */
   --font-large: 48px;
@@ -46,7 +50,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   cursor: default;
 }

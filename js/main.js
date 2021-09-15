@@ -5,9 +5,9 @@ const $navbarHeight = $navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
   if (window.scrollY > $navbarHeight) {
-    $navbar.classList.add('navbar--dark');
+    $navbar.classList.add('navbar--light');
   } else {
-    $navbar.classList.remove('navbar--dark');
+    $navbar.classList.remove('navbar--light');
   }
 });
 

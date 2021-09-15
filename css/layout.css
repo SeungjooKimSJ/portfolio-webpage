@@ -20,10 +20,10 @@
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-sky-light-blue);
   }
 
-  #navbar.navbar--dark {
+  #navbar.navbar--light {
     padding: 16px;
   }
 
