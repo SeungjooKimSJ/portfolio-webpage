@@ -71,6 +71,7 @@ $workContainer.addEventListener('click', event => {
   }
 
   const $selected = document.querySelector('.category__btn.selected');
+  const $notReady = document.querySelector('.project:last-child');
 
   $selected.classList.remove('selected');
 
@@ -86,6 +87,12 @@ $workContainer.addEventListener('click', event => {
         project.classList.remove('invisible');
       } else {
         project.classList.add('invisible');
+      }
+
+      if (filter === 'back-end') {
+        $notReady.style.display = 'flex';
+      } else {
+        $notReady.style.display = 'none';
       }
     });
 
