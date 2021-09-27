@@ -128,7 +128,7 @@
 
 .section {
   padding: 50px;
-  padding-top: 64px;
+  padding-top: 68px;
   text-align: center;
 }
 
@@ -195,12 +195,16 @@
 .job {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
-.job__icon {
-  font-size: var(--font-medium);
-  width: 40px;
-  color: var(--color-light-white);
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job__logo {
+  width: 80px;
+  height: 80px;
 }
 
 .job__description {
@@ -208,16 +212,14 @@
   text-align: left;
 }
 
-.job__name,
-.job__period {
-  color: var(--color-light-white);
-}
-
 .job__name {
+  color: var(--color-light-green);
   font-size: var(--font-small);
 }
 
+.job__introduce,
 .job__period {
+  color: var(--color-light-white);
   font-size: var(--font-micro);
 }
 
@@ -346,6 +348,10 @@
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project:last-child {
+  display: none;
 }
 
 .project.invisible {
