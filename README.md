@@ -2,7 +2,7 @@
 My portfolio-webpage that introduce myself using HTML, CSS, and JavaScript.
 
 # Live Site
-https://seungjookimsj.github.io/portfolio-webpage/
+https://seungjookimsj.netlify.app/
 
 # Images
 - Desktop version
