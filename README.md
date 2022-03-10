@@ -1,8 +1,20 @@
 # portfolio-webpage
 My portfolio-webpage that introduce myself using HTML, CSS, and JavaScript.
 
+# Technologies Used
+* JavaScript
+* HTML5
+* CSS3
+
 # Live Site
 https://seungjookimsj.netlify.app/
+
+# Current Feature List
+1. User can see navbar.
+2. User can see sections html.
+3. User can see sections css.
+4. User can see response webpage.
+5. User can see response webpage finalization.
 
 # Images
 - Desktop version
