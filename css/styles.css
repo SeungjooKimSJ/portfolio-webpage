@@ -154,6 +154,7 @@
 .about__p {
   margin-top: 40px;
   color: var(--color-white);
+  text-align: start;
 }
 
 .about__majors {
@@ -203,8 +204,9 @@
 }
 
 .job__logo {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
 }
 
 .job__description {
